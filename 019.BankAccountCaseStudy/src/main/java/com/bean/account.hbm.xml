@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.bean.BankAccount" table="account1">
+		<id name="accountNumber" type="int" column="accountnumber" />
+		<property name="accountType">
+			<column name="accounttype"></column>
+		</property>
+		<property name="firstName">
+			<column name="firstname"></column>
+		</property>
+		<property name="lastName">
+			<column name="lastname"></column>
+		</property>
+		<property name="address">
+			<column name="address"></column>
+		</property>
+		<property name="contactNumber">
+			<column name="contact"></column>
+		</property>
+		<property name="balance">
+			<column name="balance"></column>
+		</property>
+	</class>
+</hibernate-mapping>

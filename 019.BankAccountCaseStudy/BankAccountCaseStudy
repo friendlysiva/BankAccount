@@ -1,0 +1,72 @@
+
+****Create Table in DataBase****
+    Table Name:Account
+    Fields:accountNumber,acountType,FirstName,LastName,Address,Contact,Balance
+               CREATE TABLE account (
+                            accountnumber INT NOT NULL,
+                            accounttype VARCHAR(45) NULL,
+                            firstname VARCHAR(45) NULL,
+                            lastname VARCHAR(45) NULL,
+                            address VARCHAR(45) NULL,
+                            contact VARCHAR(45) NULL,
+                            balance VARCHAR(45) NULL,
+                PRIMARY KEY (accountnumber));
+=======Create class BankAccount=====
+ ***Create Member variables***
+    private Integer accountNumber;
+    private String accountType;
+    private String FirstName;
+    private String LastName;
+    private String address;
+    private String contactNumber;
+    private double balance;
+    
+ ***Generate Getters and Setters all member variables***
+ ***Generate Default Constructor***
+ ***Generate Field Constructor***
+ ***Generate toString() Method also***
+ 
+ 
+ ========Create class Transactions=======
+ ***Create Member variables***
+     private Double amount;
+***Generate Getters and Setters member variables***
+***create method Deposit(),Withdraw(),Transfer()**
+    Deposit() 
+     {
+      if(amount>=1000)
+       done deposit;
+      else
+       not possible;
+      }
+   Withdraw() 
+    {
+     if(amount>=1000 && account.getBalance()>=5000) {
+					double balance=account.getBalance()-amount;
+					 if (balance>=5000) {
+					amount=account.getBalance()-amount;
+				   account.setBalance(amount);
+				
+				System.out.println("Withdraw Success");
+				}else {
+					System.err.println("Your account balance is low");
+				}
+				}
+				System.err.println("You can not withdraw below 1000");
+     Transfer()
+     {
+     if(balance>=5000 && TransferAmount>=1000)
+       Transfer done;
+      else
+        not possible; 
+     }
+     
+=========Create class AccountOperation=====
+
+***create method addAccount(),ModifyAccount(),DeleteAccount(),ShowParticularAccount(),ShowAllAccount()**
+    addAccount(){
+    
+    }
+     
+ 
+ 
